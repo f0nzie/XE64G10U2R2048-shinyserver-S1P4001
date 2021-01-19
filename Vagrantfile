@@ -19,8 +19,10 @@ $script = <<BOOTSTRAP
   export LC_ALL=en_US.UTF-8
   locale-gen en_US.UTF-8
   sudo dpkg-reconfigure locales 
-  sudo echo "deb http://stat.ethz.ch/CRAN/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list
-  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+  # sudo echo "deb http://stat.ethz.ch/CRAN/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list
+  # sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+  sudo add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/"
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 51716619E084DAB9
   sudo apt-get update
   sudo apt-get -y install r-base r-base-dev
   sudo R -e "install.packages('shiny', repos = 'http://cran.rstudio.com/', dep = TRUE)"
