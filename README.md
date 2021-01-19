@@ -1,5 +1,7 @@
 20150205 AGinolhac
 
+GitHub: https://github.com/ginolhac/vagrant-shiny
+
 ## Install a shiny server
 
 
