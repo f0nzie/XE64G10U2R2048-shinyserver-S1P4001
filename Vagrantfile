@@ -31,10 +31,12 @@ $script = <<BOOTSTRAP
   sudo R -e "install.packages('pastecs', repos = 'http://cran.rstudio.com/', dep = TRUE)"
   sudo R -e "source('http://bioconductor.org/biocLite.R'); biocLite('GenomicRanges')"
   sudo apt-get -y install gdebi-core
-  wget https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt"
+  # wget https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt"
+  wget https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-14.04/x86_64/VERSION -O "version.txt"
   VERSION=`cat version.txt`
   # Install the latest SSO build
-  wget "https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/shiny-server-$VERSION-amd64.deb" -O ss-latest.deb  
+  # wget "https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/shiny-server-$VERSION-amd64.deb" -O ss-latest.deb  
+  wget "https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-14.04/x86_64/shiny-server-$VERSION-amd64.deb" -O ss-latest.deb  
   sudo gdebi -n ss-latest.deb
   rm *.deb
 BOOTSTRAP
