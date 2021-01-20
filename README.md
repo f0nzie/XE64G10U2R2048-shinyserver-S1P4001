@@ -1,6 +1,20 @@
-20150205 AGinolhac
+This is an example of a straight forward generation of a Vagrant virtual machine. The script necessary to create the VM is written inside the Vagrantfile and has very few lines.
+
+The machines was upgraded to Ubuntu `xenial64`, as well the R Shiny server and the `xenial` keys to the repository.
+
+There are several files that document the changes and problems found during the rebuilt of this machine: README, NEWS, BUILD, and HISTORY, all of them markdown files.
+
+
+
+Alfonso R. Reyes
+
+
+
+# Original README
 
 GitHub: https://github.com/ginolhac/vagrant-shiny
+
+20150205 AGinolhac
 
 ## Install a shiny server
 
