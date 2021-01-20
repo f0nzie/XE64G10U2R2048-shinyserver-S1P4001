@@ -1,9 +1,9 @@
 
-
+# 20210119
+* add a name to the virtual machine
+* remove R extra packages
 
 # 20210118
-
-
 
 ### add specific system packages for Maria DB and Shiny
 
