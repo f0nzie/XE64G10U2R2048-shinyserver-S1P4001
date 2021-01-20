@@ -25,11 +25,11 @@ $script = <<BOOTSTRAP
   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 51716619E084DAB9
   sudo apt-get update
   sudo apt-get -y install r-base r-base-dev
-  sudo R -e "install.packages('shiny', repos = 'http://cran.rstudio.com/', dep = TRUE)"
-  sudo R -e "install.packages('rmarkdown', repos = 'http://cran.rstudio.com/', dep = TRUE)"
-  sudo R -e "install.packages('dplyr', repos = 'http://cran.rstudio.com/', dep = TRUE)"
-  sudo R -e "install.packages('pastecs', repos = 'http://cran.rstudio.com/', dep = TRUE)"
-  sudo R -e "source('http://bioconductor.org/biocLite.R'); biocLite('GenomicRanges')"
+  sudo Rscript -e "install.packages('shiny', repos = 'http://cran.rstudio.com/', dep = TRUE)"
+  sudo Rscript -e "install.packages('rmarkdown', repos = 'http://cran.rstudio.com/', dep = TRUE)"
+  sudo Rscript -e "install.packages('dplyr', repos = 'http://cran.rstudio.com/', dep = TRUE)"
+  sudo Rscript -e "install.packages('pastecs', repos = 'http://cran.rstudio.com/', dep = TRUE)"
+  sudo Rscript -e "source('http://bioconductor.org/biocLite.R'); biocLite('GenomicRanges')"
   sudo apt-get -y install gdebi-core
   # wget https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt"
   wget https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-14.04/x86_64/VERSION -O "version.txt"
