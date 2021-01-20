@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.box = "ubuntu/xenial64"
 
-  config.vm.network "forwarded_port", guest: 3838, host: 4001
+  config.vm.network "forwarded_port", guest: 3838, host: 4001   # shiny server
 
   config.vm.provider "virtualbox" do |vb|
   #   vb.gui = true
