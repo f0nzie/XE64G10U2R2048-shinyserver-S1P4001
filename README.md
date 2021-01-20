@@ -4,6 +4,13 @@ The machines was upgraded to Ubuntu `xenial64`, as well the R Shiny server and t
 
 There are several files that document the changes and problems found during the rebuilt of this machine: README, NEWS, BUILD, and HISTORY, all of them markdown files.
 
+> **Machine code explained**: `XE64G10U2R2048-shinyserver-S1P4001`
+>
+> *   `XE64G10U2R2048`: Ubuntu Xenial 64-bit; disk 10 GB; 2 CPUs; 2048 MB of RAM
+> *   `S1P4001`: One shell script; port to Shiny server is 4001
+
+
+
 
 
 Alfonso R. Reyes
